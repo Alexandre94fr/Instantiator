@@ -1,0 +1,20 @@
+{
+  "name": "net.alexandre94fr.instantiator",
+  "version": "1.0.0",
+  "displayName": "Instantiator",
+  "description": "A tool to safely and consistently implement the singleton pattern in Unity.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Alexandre RICHARD",
+    "email": "Alexandre94.fr@gmail.com",
+    "url": "https://github.com/Alexandre94fr"
+  },
+  "keywords": [
+    "tool",
+    "utility",
+    "singleton",
+    "unity",
+    "pattern"
+  ],
+  "types": "library"
+}
