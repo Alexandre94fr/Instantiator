@@ -4,7 +4,7 @@ using System;
 using System.Reflection;
 using UnityEngine;
 
-namespace Instantiator
+namespace InstantiatorPackage
 {
     [DefaultExecutionOrder(-50)]
     public class Instantiator : MonoBehaviour
