@@ -42,13 +42,50 @@ As you can see in the first example we use reflexion to get the 'Instance' varia
 **Note :** If you need more documentation check out the Instantiator class.
 
 
+## ➤ Installation :
+
+In reality there is no need of downloading the projet, I made this tool compatible with the Unity's package manager.
+
+In order to install the tool, follow this steps :
+
+- Open the Unity's package manager
+
+At the **top of the Unity application** you will see multiple dropdown, please **click on the 'Window'** one 
+
+![image](https://github.com/user-attachments/assets/826603ad-3a94-437c-9e41-09537c40cf5a)
+
+After that **click on the 'Package Manager' button**
+
+![image](https://github.com/user-attachments/assets/bb4905eb-d86c-47dd-9da3-ef81e274f8b5)
+
+- Add the package
+
+Now that the Package Manager is open, click on the '+' dropdown
+
+![image](https://github.com/user-attachments/assets/ab62972c-8340-4f3a-9b13-ce8ed35d1de1)
+
+After that **click on the 'Add package from git URL...' button**
+
+![image](https://github.com/user-attachments/assets/125918bd-e34d-41b5-96ee-49f6dcdb42e7)
+
+Copy (Ctrl C) and paste (Ctrl V) the project link [https://github.com/Alexandre94fr/Instantiator.git] into this :
+
+![image](https://github.com/user-attachments/assets/1a486ff7-0708-4faf-9e59-4194044a2fa7)
+
+And finally **press the 'Add' button**
+
+![image](https://github.com/user-attachments/assets/328133d4-0fd5-473d-aff9-93912227f065)
+
+Good job, now you can use the Instantiator, have fun ^^
+
+
 ## ➤ License :
 
 As mentioned earlier, you're free to use Instantiator in your projects. 
 
 If you release a game using this tool, I’d appreciate a small credit, for example, as “External Technical Help”.
 
-Thank you !
+Thank you ! :D
 
 
 ## ➤ Credits :
