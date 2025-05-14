@@ -1,6 +1,6 @@
 {
   "name": "Instantiator.Runtime",
-  "rootNamespace": "Instantiator",
+  "rootNamespace": "InstantiatorPackage",
   "references": [],
   "includePlatforms": [],
   "excludePlatforms": [],
