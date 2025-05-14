@@ -15,10 +15,10 @@ namespace InstantiatorPackage
         {
             Warning,
             WarningAndPause,
-            WarningAndDestroyDuplicateObject,
-            DestroyDuplicateObject,
-            WarningAndDestroyDuplicateObjectParent,
-            DestroyDuplicateObjectParent,
+            WarningAndDestroyingDuplicateObject,
+            DestroyingDuplicateObject,
+            WarningAndDestroyingDuplicateObjectParent,
+            DestroyingDuplicateObjectParent,
         }
 
         /// <summary>
@@ -143,19 +143,19 @@ namespace InstantiatorPackage
                     HandleWarningAndPause(p_classInstance);
                     break;
 
-                case InstanceConflictResolutions.WarningAndDestroyDuplicateObject:
+                case InstanceConflictResolutions.WarningAndDestroyingDuplicateObject:
                     HandleWarningAndDestroySecond(p_classInstance);
                     break;
 
-                case InstanceConflictResolutions.DestroyDuplicateObject:
+                case InstanceConflictResolutions.DestroyingDuplicateObject:
                     HandleDestroySecond(p_classInstance);
                     break;
 
-                case InstanceConflictResolutions.WarningAndDestroyDuplicateObjectParent:
+                case InstanceConflictResolutions.WarningAndDestroyingDuplicateObjectParent:
                     HandleWarningAndDestroySecondParent(p_classInstance);
                     break;
 
-                case InstanceConflictResolutions.DestroyDuplicateObjectParent:
+                case InstanceConflictResolutions.DestroyingDuplicateObjectParent:
                     HandleDestroySecondParent(p_classInstance);
                     break;
 
