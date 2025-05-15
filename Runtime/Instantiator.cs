@@ -10,7 +10,7 @@ namespace InstantiatorPackage
     public class Instantiator : MonoBehaviour
     {
         #region -= Variables =-
-
+        
         public enum InstanceConflictResolutions
         {
             Warning,
@@ -23,9 +23,9 @@ namespace InstantiatorPackage
 
         /// <summary>
         /// You can modify this variable directly in the script so that any team member using the 
-        /// <see cref="GetInstance"/> method (not its overloads) will follow your naming conventions 
+        /// '<see cref="GetInstance"/>' method (not it's overloads) will follow your naming conventions 
         /// for singleton instance variables. </summary>
-        public const string DEFAULT_SINGLETON_VARIABLE_NAME = "Instance";
+        static string DEFAULT_SINGLETON_VARIABLE_NAME = "Instance";
         #endregion
 
         #region -= Methods =-
