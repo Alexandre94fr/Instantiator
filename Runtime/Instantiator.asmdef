@@ -1,7 +1,9 @@
 {
   "name": "Instantiator.Runtime",
   "rootNamespace": "InstantiatorPackage",
-  "references": [],
+    "references": [
+      "Instantiator.Editable"
+    ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
