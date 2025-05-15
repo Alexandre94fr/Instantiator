@@ -22,10 +22,10 @@ namespace InstantiatorPackage
         }
 
         /// <summary>
-        /// You can modify the 'DEFAULT_SINGLETON_VARIABLE_NAME' variable directly in the InstantiatorSettings script
-        /// so that any team member using the <see cref="GetInstance"/> method (not its overloads) 
-        /// will follow your naming conventions for singleton instance variables. </summary>
-        string _defaultSingletonVariableName;
+        /// You can modify this variable directly in the script so that any team member using the 
+        /// '<see cref="GetInstance"/>' method (not it's overloads) will follow your naming conventions 
+        /// for singleton instance variables. </summary>
+        string DEFAULT_SINGLETON_VARIABLE_NAME = "Instance";
         #endregion
 
         #region -= Methods =-
@@ -37,8 +37,6 @@ namespace InstantiatorPackage
                 $"Please remove it from the GameObject named '{gameObject.name}'. " +
                 $"This is a static utility class, you do not need to attach it to any GameObject for it to function."
             );
-
-            _defaultSingletonVariableName = InstantiatorSettings.DEFAULT_SINGLETON_VARIABLE_NAME;
         }
 
         /// <summary> 
@@ -46,7 +44,7 @@ namespace InstantiatorPackage
         /// else it handles the conflict according to the specified resolution type set. 
         /// 
         /// <para> <b> Note: </b> This function overload will automatically try to find the "Instance" variable.
-        /// You can find the targeted name in the '<see cref="_defaultSingletonVariableName"/>' Instantiator's variable. </para>
+        /// You can find the targeted name in the '<see cref="DEFAULT_SINGLETON_VARIABLE_NAME"/>' Instantiator's variable. </para>
         /// 
         /// <para> <b> Method utilization example: </b> </para>
         /// <example>
@@ -73,12 +71,12 @@ namespace InstantiatorPackage
             Type givenClassType = typeof(T);
 
             // Look for the "Instance" variable who is Public and Static
-            FieldInfo instanceVariable = givenClassType.GetField(_defaultSingletonVariableName, BindingFlags.Public | BindingFlags.Static);
+            FieldInfo instanceVariable = givenClassType.GetField(DEFAULT_SINGLETON_VARIABLE_NAME, BindingFlags.Public | BindingFlags.Static);
 
             // If we didn't find the so called named "Instance" variable we return an error
             if (instanceVariable == null)
             {
-                Debug.LogError($"<color=red>ERROR!</color> The class '{givenClassType}' does not have a public static '{_defaultSingletonVariableName}' variable. Returning null.");
+                Debug.LogError($"<color=red>ERROR!</color> The class '{givenClassType}' does not have a public static '{DEFAULT_SINGLETON_VARIABLE_NAME}' variable. Returning null.");
                 return null;
             }
 
